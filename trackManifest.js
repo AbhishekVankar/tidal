@@ -1,5 +1,5 @@
 // ONLY function body
-
+console.log('URL::',url)
 const parsedUrl = new URL(url);
 const id = parsedUrl.pathname.split('/').pop();
 const query = parsedUrl.searchParams.toString();
