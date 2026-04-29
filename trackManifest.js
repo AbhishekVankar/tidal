@@ -4,7 +4,7 @@ const parsedUrl = new URL(url);
 const id = parsedUrl.pathname.split('/').pop();
 const query = parsedUrl.searchParams.toString();
 
-const newUrl = `${ctx.localStorage.getItem('streamurl')}/trackManifests/?id=${id}&${query}`;
+const newUrl = `${ctx.localStorage.getItem('streamurl')}/track/?id=${id}&${query}`;
 
 const res = await ctx.fetch(newUrl);
 const data = await res.json();
